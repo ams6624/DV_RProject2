@@ -1,0 +1,35 @@
+---
+title: "DVR_Project2"
+output: html_document
+---
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Our data was taken from <https://support.spatialkey.com/spatialkey-sample-csv-data/> The file we chose from this website is called TechCrunch Continental USA and contains the listing 1,460 company funding records reported by TechCrunch. 
+
+The Steps
+
+Step 1
+The first step to produce our project was to look for the data. Our data was taken from <https://support.spatialkey.com/spatialkey-sample-csv-data/>. The file we chose from this website is called TechCrunch Continental USA and contains the listing 1,460 company funding records reported by TechCrunch. 
+
+Step 2
+Once we chose our data we begun to set up the data to create the oracle database. We modified the R_ETL.R. file to load our csv file into our oracle account. This file can be found under the folder named 02 Data Wrangling by the name 'Set up.R'
+
+Here's a summary of what our data looks like. 
+```{r}
+source("../01 Data/Summary_Data.R", echo = TRUE)
+```
+
+round stands for the following 
+— Pre-funding: You build a prototype of your product.
+— Seed Round: The funding necessary to launch your product.
+— A Round: The funding necessary to get product traction.
+— B Round: The funding necessary to scale your product
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
