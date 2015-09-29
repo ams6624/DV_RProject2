@@ -29,7 +29,7 @@ if( length(measures) > 1 || ! is.na(dimensions)) {
 }
 
 
-# Make all state data do upper case
+# Make all state data to upper case
 df["state"] <- data.frame(lapply(df["State"], toupper))
 
 df$fundedDate  <- gsub(" [0-9]+:.*", "", gsub(" UTC", "", mdy(as.character(df$fundedDate),  tz="UTC")))

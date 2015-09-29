@@ -20,12 +20,28 @@ Here's a summary of what our data looks like.
 source("../01 Data/Summary_Data.R", echo = TRUE)
 ```
 
-round stands for the following 
+The data in column 'round' stands for the following 
 — Pre-funding: You build a prototype of your product.
 — Seed Round: The funding necessary to launch your product.
 — A Round: The funding necessary to get product traction.
 — B Round: The funding necessary to scale your product
 
+Step 3
+Once we had our data in place we continued by playing around with data wrangling. In the file 02 Data Wrangling there's a script called First_RE.R which contains our data wrangling. 
+
+```{r}
+source("../01 Data Wrangling/First_RE.R", echo=TRUE)
+
+```
+
+Step 4 
+Here's our first data wrangling. 
+
+Step 5
+Here's our second data wrangling
+
+Step 6 
+Here's our third data wrangling. In this one we used group_by() 
 You can also embed plots, for example:
 
 ```{r, echo=FALSE}
