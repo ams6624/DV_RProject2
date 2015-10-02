@@ -33,7 +33,7 @@ source("../02 Data Wrangling/First_RE.R", echo=TRUE)
 ```
 
 ###Step 4 
-Here's our first data wrangling.Here we took our data, grouped it by state, counted the number of distinct companies (some companies did more than one fund raise) per state and displayed it in a view arranged in descending order.Some interesting things we found from our data was that the state with the most companies raising money were California with a total of 533 companies follower by New York with 83. There's a drastic difference between the two. 
+Here's our first data wrangling.Here we took our data, grouped it by state, counted the number of distinct companies (some companies did more than one fund raise) per state and displayed it in a view arranged in descending order.Some interesting things we found from our data was that the state with the most companies raising money were California with a total of 533 companies follower by New York with 83. There's a drastic difference between the two. Despite that we somewhat expected that California would be #1 followed by New York, we were very surprised to see that the difference between California and the rest of the companies ranges from 450-532, which is a very big difference. 
 ```{r}
 source("../02 Data Wrangling/DataWrangling1.R", echo=TRUE)
 
@@ -41,7 +41,7 @@ source("../02 Data Wrangling/DataWrangling1.R", echo=TRUE)
 
 
 ###Step 5
-Here's our second data wrangling. In this one we used group_by(). 
+Here's our second data wrangling. In this one we used group_by(). For this data wrangling we decided to arrange the data by category and compare how much money each category raised. The category that raised the most money was hardware, which did not surprise us becuase in order to use technology you need to have a product to use it through. However, what did surprise us was that cleantech came in number three just below biotech. It was great to see that so much money is being invested in technologies that will aid hummanity both in health needs and in perserving the planet. We would have excpected that software or/and mobile would come in on top after hardware but we were pleasantly surprised to see that biotech and cleantech were on top. 
 ```{r}
 source("../02 Data Wrangling/DataWrangling2.R", echo=FALSE)
 View(dw2)
@@ -52,9 +52,22 @@ source("../03 Visualizations/DW2.R", echo=TRUE)
 ```
 
 ###Step 6 
-Here's our third data wrangling. 
+Here's our third data wrangling. In this one instead of using the amount of funding that each category raised we wanted to see how many companies actually fell into those categories. We were very surprised to see that despite the fact that hardware, biotech and cleantech companies were the ones that got the most funding, the number of companies founded that actually worked in that category were very small. We can see that the category of Web was the one that had the most companies by a big difference and it is follwed by software. Those categories did not raise nearly as much as hardware, biotech and cleantech and yet entrepreneurs decide that they want to go into software or Web(especially web.)
 ```{r}
-source("../02 Data Wrangling/DataWrangling3.R", echo=TRUE)
+source("../02 Data Wrangling/DataWrangling3(1).R", echo=TRUE)
 
+```
+```{r}
+source("../03 Visualizations/DW3(1).R", echo=TRUE)
+```
+###Step 7
+
+For our fourth data wrangling, we decided to look at the average raised amount per state. Surprisingly the highest average raised amount was not from California, which was the state with the most companies. 
+```{r}
+source("../02 Data Wrangling/DataWrangling4.R", echo=TRUE)
+
+```
+```{r}
+source("../03 Visualizations/DW4.R", echo=TRUE)
 ```
 
