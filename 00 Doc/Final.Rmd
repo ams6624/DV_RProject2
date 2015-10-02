@@ -2,6 +2,7 @@
 title: "DVR_Project2" 
 output: html_document
 ---
+_Group Members: Aura Maria Salazar, Adriana Murga_
 
 Our data was taken from <https://support.spatialkey.com/spatialkey-sample-csv-data/> The file we chose from this website is called TechCrunch Continental USA and contains the listing 1,460 company funding records reported by TechCrunch. 
 
@@ -60,7 +61,9 @@ source("../02 Data Wrangling/DataWrangling3(1).R", echo=TRUE)
 ```{r}
 source("../03 Visualizations/DW3(1).R", echo=TRUE)
 ```
-###Step 7
+
+
+### Step 7
 
 For our fourth data wrangling, we decided to look at the average raised amount per state. Surprisingly the highest average raised amount was not from California, which was the state with the most companies. 
 ```{r}
